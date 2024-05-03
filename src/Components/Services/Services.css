@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1 {
+  width: max-content;
+  font-size: 72px;
+  position: relative;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 800;
+  color: #4C1A57;
+  margin: 25px auto;
+}
+
+.h2 {
+  font-size: 30px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+  color: #000;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: #4C1A57;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+h1:hover::after {
+  transform: scaleX(1);
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  margin: 85px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.card {
+  background-color: #4C1A57;
+  width: 100%;
+  height: 300px;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  padding: 30px;
+  padding-top: 30px;
+  border: 1px solid #4C1A57;
+  box-shadow: 0 0 20px #4c1a57f4;
+  cursor: pointer;
+}
+
+.white-image {
+  filter: invert(1);
+  margin-left: 9rem;
+}
+
+.img-1 {
+  width: 70px;
+  margin-bottom: 50px;
+}
+
+.img-2 {
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+.img-3 {
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 23px;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+
+p {
+  color: #fff;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 840px) {
+  .cards {
+      flex-direction: column;
+      margin: 85px 20px;
+  }
+
+  .card {
+      flex-basis: 80%;
+      margin-bottom: 20px;
+  }
+
+  .white-image {
+      margin-left: 0;
+      margin-bottom: 20px;
+  }
+
+  .h1 {
+      font-size: 60px;
+      margin: 20px auto;
+  }
+
+  .h2 {
+      font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .h1 {
+      font-size: 48px;
+  }
+
+  .h2 {
+      font-size: 22px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+}
+

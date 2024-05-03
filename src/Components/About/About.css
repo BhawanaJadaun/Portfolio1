@@ -1,0 +1,89 @@
+
+    .h1{
+        width: max-content;
+        font-size: 72px;
+        position: relative;
+        cursor: pointer;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 800;
+        color: #4C1A57;
+
+        margin: 25px auto;
+    }    
+    .h1::after {
+        content:"";
+        position: absolute;
+        bottom: -5px;
+        height: 4px;
+        width: 100%;
+        left:0;
+        background-color: #4C1A57;;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+        transform: scaleX(0);
+    }
+    .h1:hover::after{
+        transform: scaleX(1);
+    }
+.About {
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+   background-color:#fefe;
+    /* background-color: aqua;
+    color: black;
+    max-width: 80vw;
+    gap: 30px;
+    margin-left: 100px;
+    max-height: 300px; */
+}
+.about-right{
+    line-break:inherit;
+    max-lines: 10;
+    line-height: 35px;
+    color: black;
+}
+
+.about-left{
+    flex-basis: 45%;
+    h3{
+        color: #212ea0;
+        font-size: 18px;
+         margin-bottom: 15px;
+    }
+    
+}
+.about-right{
+    flex-basis:45%;
+}
+
+.about h3{
+    font-size: 20px;
+  margin-bottom: 15px;
+
+    font-weight: 400;
+    color: #000f38;
+}
+.about h3 span{
+    font-size: 20px;
+    color: #212ea0;
+    font-weight: 300;
+    display: inline-block;
+}
+.about-right p1{
+   
+    color: #212ea0;
+    font-size: 18px;
+     margin-bottom: 15px;
+   
+}
+.about-right p1 span{
+   
+    color:crimson;
+    font-size: 18px;
+    
+    /* 254984 */
+}

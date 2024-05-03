@@ -1,0 +1,93 @@
+/* Common styles for heading */
+.heading h5 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 800;
+  margin: 100px;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center; /* Centering content horizontally */
+  /* Stacking items vertically on smaller screens */
+  align-items: center; /* Centering content vertically */
+  margin: 0 auto; /* Centering container horizontally */
+  padding: 0 20px; /* Adding some padding on the sides */
+}
+
+/* Detail styles */
+.detail p {
+  font-size: 20px;
+  color: slateblue;
+  font-weight: bold;
+}
+
+/* Form styles */
+form {
+  width: 100%; /* Take up full width of container */
+  max-width: 400px; /* Limiting form width on larger screens */
+}
+
+/* Contact styles */
+.Contact {
+  border-radius: 5px;
+  background-color: grey;
+  box-shadow: rgba(0, 0, 0, 0.582) 0px 3px 8px;
+  padding: 50px;
+  margin: 20px; /* Add margin to the Contact section */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(135, 213, 235, 0.159);
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: orangered;
+  padding: 17px;
+  border: none;
+  margin: 10px;
+  color: white;
+  font-size: 19px;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+button:hover {
+  padding: 19px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .heading h5 {
+    font-size: 60px;
+  }
+
+  .container {
+    padding: 0 10px; /* Adjust padding */
+    flex-direction: column; 
+  }
+
+  .Contact {
+    padding: 30px; /* Adjust padding */
+  }
+
+  form {
+    max-width: 100%; /* Take up full width of container */
+  }
+}
+
